@@ -23,11 +23,31 @@
             <h1>{{ product }}</h1>
             <p v-if="inStock">In Stock</p>
             <p v-else>Out of Stock</p>
+<<<<<<< Updated upstream
             <ul>
               <li v-for="detail in details">{{ detail }}</li>
             </ul>
             <div v-for="variant in variants" :key="variant.id">{{ variant.color }}</div>
             <button class="button">Add to Cart</button>
+=======
+
+            <ul>
+              <li v-for= "todo in todos" > {{todo}} </li>
+            </ul>
+
+            <h4>Farby</h4>
+            <u>
+              <li v-for= "variant in variants" :key="variant.id"> {{variant.farba}} </li>
+            </u>
+            <br>
+
+            <h4>Veľkosti  </h4>
+           <p>
+             <span v-for= " size in sizes"> {{size}} ,  </span>
+            </p>
+            
+
+>>>>>>> Stashed changes
           </div>
         </div>
       </div>
